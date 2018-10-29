@@ -18,9 +18,9 @@ Update food items<br>
         </tr>
         {% for items in item %}
         <tr>
-            <td><input type="number" value="{{ items.Food_id }}"/></td>
-            <td><input type="text" value="{{ items.Food_Name }}"/></td>
-            <td><input type="number" value="{{ items.Food_Price }}"/></td>
+            <td>{{ items.Food_id }}</td>
+            <td>{{ items.Food_Name }}</td>
+            <td>{{ items.Food_Price }}</td>
         </tr>
         {% endfor %}
         </table>

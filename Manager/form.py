@@ -1,6 +1,5 @@
 from django import forms
 
-
 class Add_food(forms.Form):
     Id = forms.IntegerField()
     Name = forms.CharField()
@@ -10,3 +9,4 @@ class Add_food(forms.Form):
 
 class Remove_food(forms.Form):
     Id = forms.IntegerField()
+
