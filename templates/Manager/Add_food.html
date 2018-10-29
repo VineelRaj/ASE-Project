@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Food Items</title>
+</head>
+<body>
+Add food items<br>
+<form  method="post" action="{% url 'add' %}">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="ADD">
+</form>
+
+</body>
+</html>
