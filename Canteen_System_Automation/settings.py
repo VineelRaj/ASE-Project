@@ -78,14 +78,8 @@ WSGI_APPLICATION = 'Canteen_System_Automation.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'canteendb',
-        'USER': 'root',
-        'PASSWORD': 'mysqlroot',
-        'HOST': '',
-        'OPTIONS': {
-            'autocommit': True,
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'canteendb'),
     }
 }
 
