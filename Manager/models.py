@@ -32,4 +32,4 @@ class Available_Towns(models.Model):
     Towns = models.CharField(max_length=225, unique=True)
 
     def __str__(self):
-        return Towns
+        return self.Towns
