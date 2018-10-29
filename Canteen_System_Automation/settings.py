@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Manager',
+<<<<<<< HEAD
     'homedelivery',
+=======
+    'history',
+>>>>>>> 381e4e3ef64dd509893d3ff3f6bd43db294085bf
 ]
 
 MIDDLEWARE = [
@@ -78,14 +82,8 @@ WSGI_APPLICATION = 'Canteen_System_Automation.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'canteendb',
-        'USER': 'root',
-        'PASSWORD': 'mysqlroot',
-        'HOST': '',
-        'OPTIONS': {
-            'autocommit': True,
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'canteendb'),
     }
 }
 

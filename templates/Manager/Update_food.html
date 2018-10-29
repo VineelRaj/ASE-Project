@@ -7,8 +7,8 @@
     <link type="text/css" rel="stylesheet" href="{% static 'Manager/css/table_style.css' %}">
 </head>
 <body>
-Remove food items<br>
-<form  method="post" action="{% url 'remove_food' %}">
+Update food items<br>
+<form  method="post" action="{% url 'update_food' %}">
     {% if item %}
         <table>
         <tr>
