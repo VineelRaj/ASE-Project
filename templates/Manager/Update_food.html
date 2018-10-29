@@ -18,17 +18,15 @@ Remove food items<br>
         </tr>
         {% for items in item %}
         <tr>
-            <td>{{ items.Food_id }}</td>
-            <td>{{ items.Food_Name }}</td>
-            <td>{{ items.Food_Price }}</td>
+            <td><input type="number" value="{{ items.Food_id }}"/></td>
+            <td><input type="text" value="{{ items.Food_Name }}"/></td>
+            <td><input type="number" value="{{ items.Food_Price }}"/></td>
         </tr>
         {% endfor %}
         </table>
     {% endif %}
-    {{ form.as_p }}
     {% csrf_token %}
-    {{ form.errors }}
-    <input type="submit" value="Remove">
+    <input type="submit" value="Update">
 </form>
 </body>
 </html>

@@ -36,3 +36,9 @@ def remove_food(request):
     item = Food_items.objects.all()
     content = {'form': f2, 'item': item}
     return render(request, 'Manager/Remove_food.html', content)
+
+
+def update_food(request):
+    item = Food_items.objects.all()
+    content = {'item': item}
+    return render(request, 'Manager/Update_food.html', content)

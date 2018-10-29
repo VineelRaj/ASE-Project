@@ -6,7 +6,7 @@
 </head>
 <body>
 Add food items<br>
-<form  method="post" action="{% url 'add' %}">
+<form  method="post" action="{% url 'add_food' %}">
     {{ form.as_p }}
     {% csrf_token %}
     <input type="submit" value="ADD">
