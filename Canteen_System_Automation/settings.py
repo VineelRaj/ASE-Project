@@ -38,11 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Manager',
-<<<<<<< HEAD
     'homedelivery',
-=======
     'history',
->>>>>>> 381e4e3ef64dd509893d3ff3f6bd43db294085bf
 ]
 
 MIDDLEWARE = [
