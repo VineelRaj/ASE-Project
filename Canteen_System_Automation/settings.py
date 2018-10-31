@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'Manager',
     'homedelivery',
     'history',
+    'Registration',
+    'User',
 ]
 
 MIDDLEWARE = [
