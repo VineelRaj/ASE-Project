@@ -8,25 +8,48 @@
 </head>
 <body>
 Update food items<br>
-<form  method="post" action="{% url 'update_food' %}">
-    {% if item %}
-        <table>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Price</th>
-        </tr>
-        {% for items in item %}
-        <tr>
-            <td>{{ items.Food_id }}</td>
-            <td>{{ items.Food_Name }}</td>
-            <td>{{ items.Food_Price }}</td>
-        </tr>
-        {% endfor %}
-        </table>
-    {% endif %}
+
+{% if item %}
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    {% for items in item %}
+    <tr>
+        <td>{{ items.Food_id }}</td>
+        <td>{{ items.Food_Name }}</td>
+        <td>{{ items.Food_Price }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <form method="post" action="{% url 'update_food' %}">
     {% csrf_token %}
-    <input type="submit" value="Update">
-</form>
+        Enter Id :
+        <input type="number" name="f_Id" id="f_Id"><br>
+        <input type="submit" value="Update">
+    </form>
+{% endif %}
+
+{% if update %}
+    <form method="post" action="{% url 'check_update_food' %}">
+    {% csrf_token %}
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td><input type="number" value="{{ update.Food_id }}" name="Id" id="Id" disabled="disabled"/></td>
+        <td><input type="text" value="{{ update.Food_Name }}" name="Name" id="Name" /></td>
+        <td><input type="number" value="{{ update.Food_Price }}" name="Price" id="Price" /></td>
+    </tr>
+    </table>
+    <input type="submit" value="Update"><br>
+    </form>
+{% endif %}
+<a href="{% url 'index' %}"><input type="button" id="index" value="Go to index" ></a>
 </body>
 </html>
