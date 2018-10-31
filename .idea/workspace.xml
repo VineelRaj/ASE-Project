@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c93740c-2efd-47c9-9058-de437c7cd942" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/homedelivery/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homedelivery/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/634a00bc-5222-4cb3-9b8c-6ac8d979b6bd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d91937c7-cd3f-4dce-a771-97155f54dec7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canteen_System_Automation/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Canteen_System_Automation/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Manager/migrations/0002_auto_20181030_2056.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Manager/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canteendb" beforeDir="false" afterPath="$PROJECT_DIR$/canteendb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Manager/Update_food.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Manager/Update_food.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +32,7 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="canteendb" type="feb32156:DbDataSourceImpl" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -48,27 +44,30 @@
     <session id="-1204871295">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="4" />
-          <entry key="py" value="16" />
+          <entry key="html" value="8" />
+          <entry key="py" value="20" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="4" />
-          <entry key="Python" value="16" />
+          <entry key="HTML" value="8" />
+          <entry key="Python" value="20" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -76,101 +75,87 @@
         <counts>
           <entry key="css" value="8" />
           <entry key="dummy" value="2" />
-          <entry key="html" value="120" />
-          <entry key="py" value="598" />
-          <entry key="py@Canteen_System_Automation" value="78" />
+          <entry key="html" value="467" />
+          <entry key="py" value="1090" />
+          <entry key="py@Canteen_System_Automation" value="141" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="8" />
-          <entry key="CommandLine" value="22" />
-          <entry key="HTML" value="120" />
-          <entry key="PLAIN_TEXT" value="59" />
-          <entry key="Python" value="598" />
+          <entry key="CommandLine" value="28" />
+          <entry key="HTML" value="467" />
+          <entry key="PLAIN_TEXT" value="116" />
+          <entry key="Python" value="1090" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/settings.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Manager/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/urls.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Manager/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
-                <element signature="e#649#681#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homedelivery/admin.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homedelivery/apps.py">
+        <entry file="file://$PROJECT_DIR$/templates/Manager/Add_food.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="210">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Manager/apps.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homedelivery/models.py">
+        <entry file="file://$PROJECT_DIR$/templates/Manager/Update_food.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1029">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homedelivery/tests.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homedelivery/views.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/Manager/css/table_style.css">
+        <entry file="file://$PROJECT_DIR$/Manager/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Manager/form.py">
+        <entry file="file://$PROJECT_DIR$/templates/Manager/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Manager/Remove_food.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="26" column="15" selection-start-line="11" selection-start-column="4" selection-end-line="26" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -194,17 +179,17 @@
       <list>
         <option value="$PROJECT_DIR$/Canteen_System_Automation/urls.py" />
         <option value="$PROJECT_DIR$/Manager/admin.py" />
-        <option value="$PROJECT_DIR$/Manager/urls.py" />
         <option value="$PROJECT_DIR$/templates/Manager/Add_food.html" />
         <option value="$PROJECT_DIR$/templates/Manager/Remove_food.html" />
         <option value="$PROJECT_DIR$/static/Manager/css/table_style.css" />
-        <option value="$PROJECT_DIR$/Manager/models.py" />
         <option value="$PROJECT_DIR$/templates/Manager/index.html" />
-        <option value="$PROJECT_DIR$/Manager/views.py" />
-        <option value="$PROJECT_DIR$/templates/Manager/Update_food.html" />
         <option value="$PROJECT_DIR$/Manager/form.py" />
         <option value="$PROJECT_DIR$/homedelivery/models.py" />
         <option value="$PROJECT_DIR$/Canteen_System_Automation/settings.py" />
+        <option value="$PROJECT_DIR$/Manager/urls.py" />
+        <option value="$PROJECT_DIR$/Manager/models.py" />
+        <option value="$PROJECT_DIR$/templates/Manager/Update_food.html" />
+        <option value="$PROJECT_DIR$/Manager/views.py" />
       </list>
     </option>
   </component>
@@ -216,7 +201,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -225,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,22 +220,24 @@
             <path>
               <item name="Canteen_System_Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Canteen_System_Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="Canteen_System_Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Canteen_System_Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Canteen_System_Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="homedelivery" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Canteen_System_Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Canteen_System_Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,10 +301,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10872483" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11275168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,10 +317,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32765958" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013423" side_tool="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4986577" weight="0.32765958" />
       <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="manage.py@Canteen_System_Automation" order="13" weight="0.32624114" />
+      <window_info active="true" anchor="bottom" id="manage.py@Canteen_System_Automation" order="13" visible="true" weight="0.32624114" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -359,60 +345,45 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/634a00bc-5222-4cb3-9b8c-6ac8d979b6bd/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/urls.py">
+    <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="924">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/views.py">
+    <entry file="file://$PROJECT_DIR$/Manager/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homedelivery/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="279">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Manager/Update_food.html">
+    <entry file="file://$PROJECT_DIR$/homedelivery/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/models.py">
+    <entry file="file://$PROJECT_DIR$/homedelivery/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Manager/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/homedelivery/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Manager/Add_food.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Manager/Remove_food.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="13" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/homedelivery/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/Manager/css/table_style.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -428,49 +399,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#649#681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homedelivery/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homedelivery/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homedelivery/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homedelivery/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homedelivery/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/settings.py">
+    <entry file="file://$PROJECT_DIR$/Manager/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Manager/Add_food.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Manager/Update_food.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manager/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Manager/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Manager/Remove_food.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="15" selection-start-line="11" selection-start-column="4" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
