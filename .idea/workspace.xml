@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9c93740c-2efd-47c9-9058-de437c7cd942" name="Default Changelist" comment="">
 <<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Manager/migrations/0002_auto_20181030_2056.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -29,6 +32,7 @@
 =======
 >>>>>>> 13991bdc53f3f9b766a9a27d2426001b00f181d3
 >>>>>>> a0dc3964c4b70b0a6f996334e879156a05a05624
+>>>>>>> fcdc87862d8934cce88c6fbe899cc5f89a12499d
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +122,7 @@
     <session id="-335803309">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
 >>>>>>> 13991bdc53f3f9b766a9a27d2426001b00f181d3
           <entry key="project.opened" value="1" />
@@ -169,7 +174,12 @@
           <entry key="Python" value="3" />
         </counts>
       </usages-collector>
+<<<<<<< HEAD
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+=======
 >>>>>>> 13991bdc53f3f9b766a9a27d2426001b00f181d3
+>>>>>>> fcdc87862d8934cce88c6fbe899cc5f89a12499d
     </session>
   </component>
   <component name="FileEditorManager">
@@ -305,9 +315,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
