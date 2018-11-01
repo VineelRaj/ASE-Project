@@ -5,7 +5,7 @@ from django.db import models
 
 class Food_items(models.Model):
     Food_id = models.IntegerField(null=False, unique=True, primary_key=True)
-    Food_Name = models.CharField(max_length=225, unique=True)
+    Food_Name = models.CharField(max_length=225)
     Food_Price = models.FloatField()
 
     def __str__(self):

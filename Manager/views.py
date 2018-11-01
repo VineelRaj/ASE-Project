@@ -39,6 +39,28 @@ def remove_food(request):
 
 
 def update_food(request):
-    item = Food_items.objects.all()
-    content = {'item': item}
-    return render(request, 'Manager/Update_food.html', content)
+    if request.method == "POST":
+        f_id = request.POST['f_Id']
+        update = Food_items.objects.get(Food_id=f_id)
+        content = {'update': update}
+        return render(request, 'Manager/Update_food.html', content)
+    else:
+        item = Food_items.objects.all()
+        content = {'item': item}
+        return render(request, 'Manager/Update_food.html', content)
+
+
+def check_update_food(request):
+    if request.method == "POST":
+        f_id = request.POST['Id']
+        name = request.POST['Name']
+        price = request.POST['Price']
+        temp = Food_items.objects.get(Food_id=f_id)
+        temp.Food_Name = name
+        temp.Food_Price = price
+        temp.save()
+        item = Food_items.objects.all()
+        content = {'item': item}
+        return render(request, 'Manager/Update_food.html', content)
+    else:
+        return render(request, 'Manager/Update_food.html')
