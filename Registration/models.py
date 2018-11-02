@@ -4,10 +4,10 @@ from django.db import models
 class Admin(models.Model):
     Name = models.CharField(max_length=225)
     email = models.EmailField()
-    password = models.CharField(max_length = 50)
-    canteen_name = models.CharField(max_length = 200)
-    canteen_street = models.CharField(max_length=200)
-    canteen_pincode = models.IntegerField(max_length = 6)
+    password = models.CharField(max_length = 50,null=True)
+    canteen_name = models.CharField(max_length = 200,null=True)
+    canteen_street = models.CharField(max_length=200,null=True)
+    canteen_pincode = models.IntegerField(null=True)
 
 class User(models.Model):
     firstname = models.CharField(max_length = 200)
@@ -20,7 +20,7 @@ class User(models.Model):
 class Staff(models.Model):
     firstname = models.CharField(max_length = 200)
     lastname = models.CharField(max_length=200)
-    employee_id = models.IntegerField(max_length=10,primary_key=True)
+    employee_id = models.IntegerField(primary_key=True)
     email = models.EmailField()
     password = models.CharField(max_length=50)
     address = models.CharField(max_length=250)
