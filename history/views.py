@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import json
 # Create your views here.
 from django.http import HttpResponse
 from history.models import foodorders,date,new1
@@ -51,9 +51,9 @@ def users(request):
             print(key,value)
             p=new1(item=key,frequency=value)
             p.save()
-            dict2={}
 
-        return render(request,'history/history.html',context={'d':dict1,'d1':dict2,'form':form})
+
+        return render(request,'history/history.html',context={'d':dict1,'form':form})
 
      else:
 

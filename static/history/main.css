@@ -67,21 +67,12 @@ body {
 }
 .button1{
   top:400px;
-  left:20px;
+  left:200px
   position:absolute;
 }
+
 .button2{
   top:400px;
-  left:20px;
-  position:absolute;
-}
-.button3{
-  top:400px;
-  left:350px;
-  position:absolute;
-}
-.button4{
-  top:400px;
-  left:350px;
+
   position:absolute;
 }
