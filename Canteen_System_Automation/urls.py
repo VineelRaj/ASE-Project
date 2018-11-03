@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('manager/', include('Manager.urls')),
     path('canteen/',include('history.urls')),
+    path('HomePage/',include('User.urls')),
 ]
