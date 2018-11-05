@@ -1,0 +1,46 @@
+{% extends "eat_at_canteen/base.html" %}
+    {% block body_block %}
+<div class="jumbotron">
+<h1> Cart </h1>
+
+
+
+        <table>
+            {% if items %}
+            <thead>
+            <th>Food Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Optional</th>
+            </thead>
+            {% for acc in items %}
+             <!--<form action="{% url 'eat_at_canteen:delete' %}"  method="POST">-->
+                <!--{% csrf_token %}-->
+
+            <tr>
+             <form action="{% url 'eat_at_canteen:delete' %}"  method="POST">
+                {% csrf_token %}
+
+                <td><input type="text" name="food" value="{{ acc.Foodname }}" readonly></td>
+                <td><input type="text" name="price" id="{{ acc.Price }}" value="{{ acc.Price }}" readonly></td>
+                <td><input type="number" id="see" name="Quantity" value="{{ acc.Quantity }}"></td>
+                <td><input type="submit" value="Remove"></td>
+                <td><input type="text" id="price"></td>
+
+             </form>
+            </tr>
+            {% endfor %}
+        </table>
+        <h2>Sub Total:</h2>
+        <h2>{{ l }}</h2>
+        {% else %}
+        <p> NO ITEMS  </p>
+        {% endif %}
+        <a href="{% url 'eat_at_canteen:Booktable' %}"><input type="button" name="" value="Book Table"></a>
+
+    </form>
+
+
+
+    {% endblock %}
+</div>

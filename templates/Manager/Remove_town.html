@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load  staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove towns </title>
+    <link type="text/css" rel="stylesheet" href="{% static 'Manager/css/table_style.css' %}">
+</head>
+<body>
+Remove towns<br>
+<form  method="post" action="{% url 'remove_towns' %}">
+    {% if item %}
+        <table>
+            <tr>
+                <th>Name of town</th>
+            </tr>
+            {% for items in item %}
+                <tr>
+                    <td>{{ items.Towns }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    {{ form.as_p }}
+    {% csrf_token %}
+    {{ form.errors }}
+    <input type="submit" value="Remove">
+</form>
+</body>
+</html>

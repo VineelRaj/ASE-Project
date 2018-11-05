@@ -1,0 +1,41 @@
+{% extends "eat_at_canteen/base.html" %}
+    {% block body_block %}
+<div class="jumbotron">
+<h1> Please Select </h1>
+
+    <form action="{% url 'eat_at_canteen:checkout' %}"  method="POST">
+        {% csrf_token %}
+        <table>
+            <thead>
+            <th>Table No</th>
+            <th>Status</th>
+            <th>Booking</th>
+            </thead>
+            <tr>
+                <td><input type="text" name="no" value="{{ table1.Table_No }}"></td>
+
+                {% if table1.Status == "Not Reserved" %}
+                    <td><input type="text" name="status" value="{{ table1.Status }}"></td>
+                    <td>Book <input type="checkbox" value="" name="table1"></td>
+                {% else %}
+                    <td colspan="2"><input type="text" name="status" value="{{ table1.Status }}"></td>
+                {% endif %}
+
+            </tr>
+            <tr>
+                <td><input type="text" name="no" value="{{ table2.Table_No }}"></td>
+
+                {% if table2.Status == "Not Reserved" %}
+                    <td><input type="text" name="status" value="{{ table2.Status }}"></td>
+                    <td>Book <input type="checkbox" value="" name="table2"></td>
+                {% else %}
+                    <td colspan="2"><input type="text" name="status" value="{{ table2.Status }}"></td>
+                {% endif %}
+
+            </tr>
+        </table>
+
+        <input type="submit" name="" value="CHECK OUT">
+    </form>
+    {% endblock %}
+</div>

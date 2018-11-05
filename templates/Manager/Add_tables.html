@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Tables</title>
+</head>
+<body>
+Add tables<br>
+<form  method="post" action="{% url 'add_tables' %}">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="ADD">
+</form>
+
+</body>
+</html>
