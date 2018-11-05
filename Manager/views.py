@@ -58,7 +58,6 @@ def check_update_food(request):
         temp = Food_items.objects.get(Food_id=f_id)
         temp.Food_Name = name
         temp.Food_Price = price
-        temp.save()
         item = Food_items.objects.all()
         content = {'item': item}
         return render(request, 'Manager/Update_food.html', content)
