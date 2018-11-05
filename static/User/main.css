@@ -1,0 +1,71 @@
+body{
+   background: bisque;
+   color: #333333;
+   margin-top: 0;
+    margin-left : 0;
+    margin-right: 2px;
+}
+
+.Heading{
+    color : orange ;
+    background-color : white;
+    text-align: center;
+    float : left;
+    width : 50%;
+    font-size : 40px;
+
+}
+.Option{
+    color : blue;
+    background-color : white;
+    font-size :15px;
+    width : 5.85%;
+    float : right;
+    text-align : center;
+    margin :1px;
+}
+
+.Option:hover{
+    transition : 0.5s;
+    cursor : pointer;
+    color : white;
+    background-color : blue;
+}
+img {vertical-align: middle;}
+.SlideShow {
+    display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
