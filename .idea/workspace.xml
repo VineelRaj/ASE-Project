@@ -2,62 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c93740c-2efd-47c9-9058-de437c7cd942" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Homepage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homepage/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homepage/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/0002_auto_20181102_2356.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/0003_auto_20181103_1154.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/0004_auto_20181103_1226.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/0005_auto_20181103_1236.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/0006_auto_20181105_1732.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eat_at_canteen/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/User/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/eat_at_canteen/css/blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/eat_at_canteen/css/side.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/eat_at_canteen/js/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/eat_at_canteen/js/effect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Homepage/Homepage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Homepage/cafeteria_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Homepage/cafeteria_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/BOOKTABLE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/G.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/basenew.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/comment_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/loginnew.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/order.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/post_confirm_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/post_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/post_draft_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/post_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/post_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/posts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eat_at_canteen/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Canteen_System_Automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Canteen_System_Automation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canteen_System_Automation/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Canteen_System_Automation/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canteen_System_Automation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Canteen_System_Automation/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manager/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canteendb" beforeDir="false" afterPath="$PROJECT_DIR$/canteendb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/history/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/history/history.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +87,14 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1309989349">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Canteen_System_Automation" />
@@ -149,11 +104,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manager/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="273">
               <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1541425936711" expanded="true" signature="2461:2887" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1423">
-              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="21">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -224,10 +178,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -327,10 +281,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.28710124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.14295302" />
       <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.13892618" />
       <window_info id="Favorites" order="2" sideWeight="0.50070924" side_tool="true" weight="0.13892618" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -418,9 +371,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/634a00bc-5222-4cb3-9b8c-6ac8d979b6bd/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/634a00bc-5222-4cb3-9b8c-6ac8d979b6bd/console.sql" />
     <entry file="file://$PROJECT_DIR$/static/Manager/css/table_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -485,9 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,9 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <marker date="1541397520208" expanded="true" signature="270:275" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,28 +520,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eat_at_canteen/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-21" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eat_at_canteen/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#638#670#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,6 +562,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Manager/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -634,24 +582,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1541425936711" expanded="true" signature="2461:2887" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Canteen_System_Automation/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1423">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="21">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
         </state>
       </provider>
     </entry>
