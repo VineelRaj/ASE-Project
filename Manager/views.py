@@ -2,7 +2,6 @@ from django.shortcuts import render
 from . import form
 from .models import Food_items, Quantity, Tables, Available_Towns
 
-
 # Create your views here.
 def index(request):
     return render(request, 'Manager/index.html')
@@ -58,7 +57,6 @@ def check_update_food(request):
         temp = Food_items.objects.get(Food_id=f_id)
         temp.Food_Name = name
         temp.Food_Price = price
-        temp.save()
         item = Food_items.objects.all()
         content = {'item': item}
         return render(request, 'Manager/Update_food.html', content)

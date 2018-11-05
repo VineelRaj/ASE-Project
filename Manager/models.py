@@ -7,6 +7,7 @@ class Food_items(models.Model):
     Food_id = models.IntegerField(null=False, unique=True, primary_key=True)
     Food_Name = models.CharField(max_length=225)
     Food_Price = models.FloatField()
+    Category = models.CharField(max_length=255, null=True)
 
     def __str__(self):
         return self.Food_Name
