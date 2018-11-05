@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'homedelivery',
     'history',
     'Registration',
+    'eat_at_canteen',
     'User',
 ]
 
