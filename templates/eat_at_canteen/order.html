@@ -1,0 +1,43 @@
+{% extends "eat_at_canteen/base.html" %}
+
+    {% block body_block %}
+
+<div  id="one">
+<h1> Please Select </h1>
+
+
+        <table>
+            {% if items %}
+            <thead>
+            <th>Food Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            </thead>
+            {% for acc in items %}
+             <form id="myform" method="POST">
+                {% csrf_token %}
+
+            <tr>
+                <td><input type="text" id="seeone" name="food" value="{{ acc.Food_Name }}" readonly></td>
+                <td><input type="text" id="seetwo" name="price" value="{{ acc.Food_Price }}" readonly></td>
+                <td><input type="number" id="seethree" name="quantity" value=""></td>
+
+
+
+        <td><input type="submit" value="ADD TO CART"></td>
+                 </tr>
+</form>
+
+
+            {% endfor %}
+        </table>
+        {% else %}
+        <p> NO ACCESS RECORDS FOUND!  </p>
+        {% endif %}
+
+
+</div>
+
+
+
+{% endblock %}
