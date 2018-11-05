@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+#create your views here
+
+def default(request):
+    return render(request, 'Registration/Registration_01.html')
