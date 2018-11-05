@@ -1,5 +1,6 @@
 from django import forms
 
+
 class Add_food(forms.Form):
     Id = forms.IntegerField()
     Name = forms.CharField()
@@ -7,6 +8,14 @@ class Add_food(forms.Form):
     Quantity = forms.IntegerField()
 
 
-class Remove_food(forms.Form):
+class get_id(forms.Form):
     Id = forms.IntegerField()
 
+
+class Add_tables(forms.Form):
+    Id = forms.IntegerField()
+    availability = forms.BooleanField(required=False)
+
+
+class Add_city(forms.Form):
+    town = forms.CharField()

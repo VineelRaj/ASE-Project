@@ -19,5 +19,12 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('manager/', include('Manager.urls')),
+    path('canteen/', include('history.urls')),
+    path('HomePage/', include('Homepage.urls')),
     path('canteen/',include('history.urls')),
+<<<<<<< HEAD
+=======
+    path('ec/',include('eat_at_canteen.urls'))
+>>>>>>> fb48fd9b6d556643b39f48488158673ea966ec74
+    #path('HomePage/',include('User.urls')),
 ]

@@ -6,5 +6,8 @@
       <auth-required>false</auth-required>
       <introspection-schemas>*:</introspection-schemas>
     </data-source>
+    <data-source name="Django default" uuid="9553267a-2e9d-44b8-a9f9-ddaac471ce35">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
+    </data-source>
   </component>
 </project>
