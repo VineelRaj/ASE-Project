@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          <link rel="stylesheet" type="text/css" href="{% static 'history/main.css' %}">
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              {% for key,value in d.items%}
+              ['{{key}}',{{value}}],
+              {%endfor%}
+            ]);
+
+
+              var options = {'title':'statistics of food items', 'width':300, 'height':200};
+
+
+              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+              chart.draw(data, options);
+            }
+          </script>
+
+     </head>
+    <body>
+       <div class="menu">
+       </div>
+
+
+    <table>
+         <tr>
+            <td>
+              <div class="box1">
+               <h3 class="text1">STATISTICS OF FOODITEMS</h3>
+
+             <br><br><br>
+
+
+                  <div class="date1">
+                  <form method="POST" autocomplete="off">
+
+                    {{form.as_p}}
+                    {% csrf_token %}
+                  </div>
+                  <br><br><br>
+                  <div id="piechart"></div>
+                  <div id="chartContainer" style="height: 370px; width: 10%;"></div>
+                  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+
+                  <div class="button1">
+                 <input type="submit" class="btn btn-primary" value="submit">
+               </div>
+             </div>
+               </form>
+            </td>
+            <td>
+              <div class="box2">
+                <h3 class="text2"> ANALYSIS OF BUSINESS</h3>
+                <br><br><br>
+                <div class="date2">
+                <p>FROM:<input type="date" data-date-inline-picker="true" />TO:<input type="date" data-date-inline-picker="true" /></p>
+               </div>
+               <div class="button2">
+               <input type="submit" class="btn btn-primary" value="submit">
+             </div>
+            </div>
+            </td>
+        </tr>
+      </table>
+
+
+
+
+
+
+ </body>
+  </html>

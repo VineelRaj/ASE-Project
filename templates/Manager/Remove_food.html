@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load  staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Food </title>
+    <link type="text/css" rel="stylesheet" href="{% static 'Manager/css/table_style.css' %}">
+</head>
+<body>
+Remove food items<br>
+<form  method="post" action="{% url 'remove_food' %}">
+    {% if item %}
+        <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        {% for items in item %}
+        <tr>
+            <td>{{ items.Food_id }}</td>
+            <td>{{ items.Food_Name }}</td>
+            <td>{{ items.Food_Price }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    {% endif %}
+    {{ form.as_p }}
+    {% csrf_token %}
+    {{ form.errors }}
+    <input type="submit" value="Remove">
+</form>
+</body>
+</html>
