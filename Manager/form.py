@@ -15,3 +15,7 @@ class get_id(forms.Form):
 class Add_tables(forms.Form):
     Id = forms.IntegerField()
     availability = forms.BooleanField(required=False)
+
+
+class Add_city(forms.Form):
+    town = forms.CharField()

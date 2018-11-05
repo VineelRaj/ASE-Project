@@ -12,4 +12,7 @@ urlpatterns = [
     path('remove_tables/', views.remove_tables, name='remove_tables'),
     path('update_food/', views.update_food, name='update_food'),
     path('check_update_food/', views.check_update_food , name='check_update_food'),
+    path('town_home/', views.town_home, name='town_home'),
+    path('add_towns/', views.add_towns, name='add_towns'),
+    path('remove_towns/', views.remove_towns, name='remove_towns'),
 ]
