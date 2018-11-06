@@ -2,6 +2,7 @@ from django.shortcuts import render
 from . import form
 from .models import Food_items, Quantity, Tables, Available_Towns
 
+
 # Create your views here.
 def index(request):
     return render(request, 'Manager/index.html')
@@ -41,7 +42,8 @@ def update_food(request):
     if request.method == "POST":
         f_id = request.POST['f_Id']
         update = Food_items.objects.get(Food_id=f_id)
-        content = {'update': update}
+        qu_update = Quantity.objects.get(Food_id__exact=f_id)
+        content = {'update': update, 'qu_update': qu_update}
         return render(request, 'Manager/Update_food.html', content)
     else:
         item = Food_items.objects.all()
@@ -54,14 +56,18 @@ def check_update_food(request):
         f_id = request.POST['Id']
         name = request.POST['Name']
         price = request.POST['Price']
-        temp = Food_items.objects.get(Food_id=f_id)
-        temp.Food_Name = name
-        temp.Food_Price = price
-        item = Food_items.objects.all()
-        content = {'item': item}
-        return render(request, 'Manager/Update_food.html', content)
-    else:
-        return render(request, 'Manager/Update_food.html')
+        food_temp = Food_items.objects.get(Food_id=f_id)
+        food_temp.Food_Name = name
+        food_temp.Food_Price = price
+        food_temp.save()
+        qu = request.POST['quantity']
+        if qu > 0:
+            qu_temp = Quantity.objects.get(Food_id=f_id)
+            qu_temp.quantity = qu
+            qu_temp.save()
+    item = Food_items.objects.all()
+    content = {'item': item}
+    return render(request, 'Manager/Update_food.html', content)
 
 
 def food_home(request):
@@ -123,3 +129,31 @@ def add_towns(request):
             Available_Towns.objects.create(Towns=fname)
             return render(request, 'Manager/town_home.html')
     return render(request, 'Manager/Add_town.html', {'form': f1})
+
+
+def check_update_table(request):
+    if request.method == "POST":
+        f_id = request.POST['Id']
+        ava = request.POST['availability']
+        table_temp = Tables.objects.get(Table_id=f_id)
+        table_temp.availability = ava
+        table_temp.save()
+        item = Tables.objects.all()
+        content = {'item': item}
+        return render(request, 'Manager/Update_tables.html', content)
+    else:
+        item = Tables.objects.all()
+        content = {'item': item}
+        return render(request, 'Manager/Update_tables.html', content)
+
+
+def update_table(request):
+    if request.method == "POST":
+        f_id = request.POST['f_Id']
+        update = Tables.objects.get(Table_id=f_id)
+        content = {'update': update}
+        return render(request, 'Manager/Update_tables.html', content)
+    else:
+        item = Tables.objects.all()
+        content = {'item': item}
+        return render(request, 'Manager/Update_tables.html', content)

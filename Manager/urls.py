@@ -15,4 +15,6 @@ urlpatterns = [
     path('town_home/', views.town_home, name='town_home'),
     path('add_towns/', views.add_towns, name='add_towns'),
     path('remove_towns/', views.remove_towns, name='remove_towns'),
+    path('update_table/', views.update_table, name='update_table'),
+    path('check_update_table/', views.check_update_table , name='check_update_table'),
 ]

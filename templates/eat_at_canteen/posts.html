@@ -1,0 +1,15 @@
+{% extends "eat_at_canteen/base.html" %}
+    {% block body_block %}
+<div class="jumbotron">
+<h1> Posts </h1>
+
+
+           {% for acc in u %}
+
+               {{ acc.Add_a_Review }}
+               <p>{{ acc.comments }}</p>
+            {% endfor %}
+
+
+</div>
+    {% endblock %}

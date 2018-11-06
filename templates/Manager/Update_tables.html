@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load  staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update table </title>
+    <link type="text/css" rel="stylesheet" href="{% static 'Manager/css/table_style.css' %}">
+</head>
+<body>
+Update table<br>
+
+{% if item %}
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>Availability</th>
+    </tr>
+    {% for items in item %}
+    <tr>
+        <td>{{ items.Table_id }}</td>
+        <td>{{ items.availability }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <form method="post" action="{% url 'update_table' %}">
+    {% csrf_token %}
+        Enter Id :
+        <input type="number" name="f_Id" id="f_Id"><br>
+        <input type="submit" value="Update">
+    </form>
+{% endif %}
+
+{% if update %}
+    <form method="post" action="{% url 'check_update_table' %}">
+    Update Values:<br>
+    {% csrf_token %}
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>Availability</th>
+    </tr>
+    <tr>
+        <td><input type="number" value="{{ update.Table_id }}" name="Id"  id="Id" readonly="readonly" /></td>
+        <td><select name="availability" id="availability" >
+                <option value=True>True</option>
+                <option value=False>False</option>
+            </select>
+        </td>
+    </tr>
+    </table>
+    <input type="submit" value="Update"><br>
+    </form>
+{% endif %}
+<a href="{% url 'index' %}"><input type="button" id="index" value="Go to index" ></a>
+</body>
+</html>
