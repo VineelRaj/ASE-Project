@@ -22,5 +22,10 @@ urlpatterns = [
     path('canteen/', include('history.urls')),
     path('HomePage/', include('Homepage.urls')),
     path('canteen/',include('history.urls')),
+<<<<<<< HEAD
     #path('HomePage/',include('User.urls')),
+=======
+    path('registration',include('Registration.urls')),
+    #path('ec/',include('eat_at_canteen.urls'))
+>>>>>>> a672fc9c9d194b75628a25167a71cd136c896203
 ]

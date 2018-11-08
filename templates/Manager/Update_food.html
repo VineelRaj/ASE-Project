@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Remove Food </title>
+    <title>Update Food </title>
     <link type="text/css" rel="stylesheet" href="{% static 'Manager/css/table_style.css' %}">
 </head>
 <body>
@@ -34,17 +34,24 @@ Update food items<br>
 
 {% if update %}
     <form method="post" action="{% url 'check_update_food' %}">
+    Update Values:<br>
     {% csrf_token %}
     <table>
     <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Price</th>
+        {% if qu_update %}
+            <th>Quantity</th>
+        {% endif %}
     </tr>
     <tr>
-        <td><input type="number" value="{{ update.Food_id }}" name="Id" id="Id" disabled="disabled"/></td>
+        <td><input type="number" value="{{ update.Food_id }}" name="Id"  id="Id" readonly="readonly" /></td>
         <td><input type="text" value="{{ update.Food_Name }}" name="Name" id="Name" /></td>
         <td><input type="number" value="{{ update.Food_Price }}" name="Price" id="Price" /></td>
+        {% if qu_update %}
+            <td><input type="number" value="{{ qu_update.quantity }}" name="quantity" id="quantity" /></td>
+        {% endif %}
     </tr>
     </table>
     <input type="submit" value="Update"><br>
