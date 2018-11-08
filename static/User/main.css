@@ -1,71 +1,147 @@
 body{
-   background: bisque;
-   color: #333333;
-   margin-top: 0;
+    background: white;
+    color: #333333;
+    margin-top: 0;
     margin-left : 0;
-    margin-right: 2px;
+    margin-right: 0;
 }
-
 .Heading{
     color : orange ;
-    background-color : white;
+    background-color : #333333;
     text-align: center;
+    padding-left : 5%;
     float : left;
-    width : 50%;
+    width : 83.9%;
+    padding-top : 0.5%;
+    padding-bottom: 0.15%;
     font-size : 40px;
-
+    cursor : pointer;
 }
-.Option{
-    color : blue;
-    background-color : white;
-    font-size :15px;
-    width : 5.85%;
-    float : right;
+.Option1{
+    color : white;
+    background-color : #333333;
+    font-size :20px;
+    width : 5.7%;
+    height : 39px;
     text-align : center;
-    margin :1px;
+    padding-top : 17px;
+    margin-right: 4.9% ;
+    margin-left: 88.9%;
 }
-
-.Option:hover{
+.Option2{
+    color : white;
+    background-color : #333333;
+    font-size :20px;
+    width : 5.45%;
+    height : 39px;
+    text-align : center;
+    padding-top : 17px;
+    margin-left: 94.569%;
+    margin-top : -3.68%;
+}
+.SlideImage{
+    vertical-align: middle;
+    height : 40%;
+    width : 50%;
+    margin-right:25%;
+    margin-left:25%;
+}
+.Option1:hover{
     transition : 0.5s;
     cursor : pointer;
     color : white;
-    background-color : blue;
+    background-color : orange;
 }
-img {vertical-align: middle;}
+.Option2:hover{
+    transition : 0.5s;
+    cursor : pointer;
+    color : white;
+    background-color : orange;
+}
 .SlideShow {
-    display: none;
+    background-color : #333333;
+    margin-top:-1.15%;
+    height : 150%;
 }
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    top : 42%;
+    right: 25%;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    top : 42%;
+    left: 25%;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(1,1,1,1);
 }
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin : 0 2px 2px;
+  background-color: white;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.dot:hover {
+  background-color: darkgray;
+}
+
+.About{
+    color:white;
+    background-color: orange;
+    opacity : 1.5;
+    text-align : center;
+    margin-top:1.65%;
+    padding-top: 25px;
+    font-size: 25px;
+    height : 300px;
+}
+h1{
+    text-align : left;
+}
+#Food{
+    background-color: #333333;
+    color : orange;
+    height : auto;
+    margin-top: -2.6%;
+    font-size: 30px;
+}
+.card {
+    background-color: bisque;
+    height : 300px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    float : left;
+    margin-left:5%;
+}
+
+.card:hover {
+    box-shadow: 4px 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+.CardImage{
+    width : 100%;
+    height : 60%;
+
 }
