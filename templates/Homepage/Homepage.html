@@ -10,30 +10,62 @@
 <body>
     <header>
         <div class = "Heading">cafeteria</div>
-        <div class = "Option">
+        <div class = "Option1" >
             Sign in
         </div>
-        <div class = "Option">
+        <div class = "Option2" >
             Sign up
         </div>
     </header>
     <br>
     <div class = "SlideShow">
-        <img src = "cafeteria_01.jpg" style="width:100%">
+        <img class = "SlideImage" src = "{%static "Homepage/cafeteria_01.jpg" %}" >
     </div>
     <div class = "SlideShow">
-        <img src = "cafeteria_02.jpg" style="width:100%">
+        <img class = "SlideImage" src = "{%static "Homepage/cafeteria_02.jpg" %}" >
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <div style="text-align:center">
+    <div style="margin-left : 49%;margin-top : -3%">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <div>
+        <div class = "About">
+            <h1>About</h1>
+            Our Service is Wonderful to experience....
+        </div>
+        <div id = "Food">
+            <h1>Things that worth waiting!!</h1>
+            <div class="card">
+                <img class="CardImage" src="{%static "Homepage/Kebab.jpg" %}" alt="Avatar">
+                <div class="container">
+                    <h4><b>Kebabs</b></h4>
+                    <p>Price : 100Rs</p>
+                </div>
+
+            </div>
+            <div class="card">
+                <img class="CardImage" src="{%static "Homepage/role.jpeg" %}" alt="Avatar">
+                <div class="container">
+                    <h4><b>roles</b></h4>
+                    <p>Price : 100Rs</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="CardImage" src="{%static "Homepage/burger.jpg" %}" alt="Avatar">
+                <div class="container">
+                    <h4><b>roles</b></h4>
+                    <p>Price : 100Rs</p>
+                </div>
+            </div>
+        </div>
+        <br>
     </div>
 </body>
 </html>
 <script type = "text/javascript">
-    var slideIndex = 1;
+    let slideIndex = 1;
     showSlides(slideIndex);
 
     function plusSlides(n) {
@@ -45,9 +77,9 @@
     }
 
     function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
+      let i;
+      let slides = document.getElementsByClassName("SlideShow");
+      let dots = document.getElementsByClassName("dot");
       if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
